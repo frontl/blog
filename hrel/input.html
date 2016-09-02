@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+Input标签中Type的类型及详细用法 </br>
+
+Input表示Form表单中的一种输入对象，其又随Type类型的不同而分文本输入框，密码输入框，单选/复选框，提交/重置按钮等，下面一一介绍。</br>
+
+1，type=text</br>
+输入类型是text,这是Input的默认类型。</br>
+参数name：同样是表示的该文本输入框名称。</br>
+参数size：输入框的长度大小。</br>
+参数maxlength：输入框中允许输入字符的最大数。</br>
+参数value：输入框中的默认值</br>
+特殊参数readonly：表示该框中只能显示，不能添加修改。</br>
+
+2，type=password</br>
+密码输入框，当在此输入框输入信息时显示为保密字符。</br>
+参数和“type=text”相类似。</br></br>
+
+
+
+3，type=file</br>
+当你在BBS上传图片，在EMAIL中上传附件时一定少不了的东西：）</br>
+提供了一个文件目录输入的平台，参数有name，size。</br>
+
+
+4，type=hidden</br>
+非常值得注意的一个，通常称为隐藏域：如果一个非常重要的信息需要被提交到下一页，但又不能或者无法明示的时候。</br>
+一句话，你在页面中是看不到hidden在哪里。最有用的是hidden的值。</br>
+
+<!-- <form name="form1">
+your hidden info here:
+<input type="hidden" name="yourhiddeninfo" value="cnbruce.com">
+</form>
+<script>
+alert("隐藏域的值是 "+document.form1.yourhiddeninfo.value)
+</script> -->
+
+
+5，type=button</br>
+标准的一windows风格的按钮，当然要让按钮跳转到某个页面上还需要加入写JavaScript代码</br>
+
+
+
+6，type=checkbox</br>
+多选框，常见于注册时选择爱好、性格、等信息。参数有name,value及特别参数checked（表示默认选择）</br>
+其实最重要的还是value值，提交到处理页的也就是value。（附：name值可以不一样，但不推荐。）</br>
+
+
+
+
+7，type=radio</br>
+即单选框，出现在多选一的页面设定中。参数同样有name,value及特别参数checked.</br>
+不同于checkbox的是，name值一定要相同，否则就不能多选一。当然提交到处理页的也还是value值。</br>
+
+
+
+
+8，type=image</br>
+比较另类的一个，自己看看效果吧，可以作为提交式图片</br>
+
+
+
+
+9，type=submit and type=reset</br>
+分别是“提交”和“重置”两按钮</br>
+submit主要功能是将Form中所有内容进行提交action页处理，reset则起个快速清空所有填写内容的功能。</br>
+
+
+	
+</body>
+</html>

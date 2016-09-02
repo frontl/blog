@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<h4><p>ECMAScript 关键字</p></h4>
+<p>break  case catch continue default delete do else  finally   for   function  if  in  instanceof  new return switch  this  throw  try  typeof  var  void while  with</p>
+<h4><p>ECMAScript 保留字</p></h4>
+<p>abstract boolean byte char class const debugger double enum export extends final float goto implements import int interface long native package private protected public short static super synchronized throws transient
+ volatile</p>
+ <h4><p>5种原始类型（primitive type）</p></h4> 
+ <p>Undefined、Null、Boolean、Number、String</p>
+ <p>ECMAScript 提供了 typeof 运算符来判断一个值是否在某种类型的范围内。可以用这种运算符判断一个值是否表示一种原始类型：如果它是原始类型，还可以判断它表示哪种原始类型。</p>
+ <h4><p>要获得字符串的长度</p></h4> 
+ <p>var sColor = "red";</p>
+<p> alert(sColor.length);	//输出 "3"</p>
+<h4><p>Boolean 类型的 toString() 方法只是输出 "true" 或 "false"，结果由变量的值决定：</p></h4>
+<p>var bFound = false;</p>
+<p>alert(bFound.toString());</p>
+<h3><p>Number 类型的 toString() 方法比较特殊，它有两种模式，即默认模式和基模式。</p></h3>
+<h4>
+	<p>默认模式，toString() 方法只是用相应的字符串输出数字值（无论是整数、浮点数还是科学计数法）</p>
+</h4>
+<p>var iNum1 = 10;</p>
+<p>var iNum2 = 10.0;</p>
+<p>alert(iNum1.toString());	//输出 "10"</p>
+<p>alert(iNum2.toString());	//输出 "10"</p>
+<h4>
+	<p>采用 Number 类型的 toString() 方法的基模式，可以用不同的基输出数字，例如二进制的基是 2，八进制的基是 8，十六进制的基是 16。</p>
+</h4>
+	<p>var iNum = 10;</p>
+	<p>alert(iNum.toString(2));	//输出 "1010"</p>
+	<p>alert(iNum.toString(8));	//输出 "12"</p>
+	<p>alert(iNum.toString(16));	//输出 "A"</p>
+	<p>注释：对数字调用 toString(10) 与调用 toString() 相同，它们返回的都是该数字的十进制形式。</p>
+	<h4>
+		<p>ECMAScript 一元运算符</p>
+	</h4>
+	<p> delete  void 前增量/前减量运算符(++i/--i) 后增量/后减量运算符(i++/i--) 一元加法和一元减法</p>
+
+
+
+</body>
+</html>

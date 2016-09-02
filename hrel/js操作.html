@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p><h3>JavaScript语法特点</h3></p>
+	<p>1、javascript面向对象开发的</p>
+	<p>2. 事件驱动</p>
+	<p>3.松散型 弱类型</p>
+	<p>4.解释型语言。由宿主环境(浏览器)解释执行</p>
+	<p>
+		<h6>JavaScript难点 1:语法的松散、自由性 2:各个浏览器的兼容性</h6>
+	</p>
+	<p><h3>JavaScaript输出工具</h3></p>
+	<p>alert();document.write(); prompt(“”,“”);</p>
+	<p><h3>JavaScaript放置引用</h3></p>
+	<p>A.< script type=“text/javascript” language=“javascript”></script></p>
+	<p>B.可以在超链接或是重定向的位置调用javascript代码</p>
+	<p>格式："javascript:alert('我是超链接')"</p>
+	<p>重定向格式：action="javascript:alert('我是表单')"</p>
+	<p> C.在事件后面进行调用</p>
+	<p>格式：onclick="alert('我是事件')"</p>
+	<p>D.调用外部JavaScript文件</p>
+	<p>格式： < script src=“index.js”type=“text/javascript”language=“javascript”></script></p>
+
+	<p>
+		<h5>逻辑运算符可以对任何类型的数据进行运算但是在运算的时候，可以转换为对应的布尔值 Boolean</h5>
+	</p>
+	<p>Undefine false</p>
+   <p>Null false</p>
+   <p>Boolean 就是本身的值</p>
+   <p>Number 除了0以外都是真的</p>
+   <p>String 除了空字符串以外都是真的</p>
+   <p>对象 真的</p>
+<p>
+	<h3>JavaScript流程控制</h3>
+</p>
+<p>
+	<h6> 顺序结构;循环结构;选择结构(分支结构、条件结构)</h6>
+</p>
+<p>
+	<h3>JavaScript函数</h3>
+</p>
+<p><h6>函数:将完成某一特定功能的代码集合起来，可以重复使用的代码块。</h6></p>
+<p>优点:
+– 使程序更加简洁
+– 逻辑性更调理
+– 调用更方便
+– 维护更加容易</p>
+
+<p>
+	<h3>函数的声明方式(创建)</h3>
+</p>
+<p>A.基本语法</p>
+<p>function 关键字</p>
+<p>function 函数名([参数1],[参数2]....){
+函数体
+[retrun] //返回值
+}</p>
+<p>B.字面量定义的形式(匿名函数) </p>
+<p>var 变量=function ([参数1],[参数2]....){
+函数体
+[retrun] //返回值
+}</p>
+
+<p>C.以对象的形式来声明</p>
+<p>new 关键字。</p>
+<p>var 变量=new Function([参数1],[参数2]...,"函数体");</p>
+<p>
+	<h3>函数的调用方式</h3>
+</p>
+	<p>通过括号来调用 – 函数名()– 变量名()</p>
+	<p> 通过触发事件来调用– 对象.事件=function (){}</p>
+<p> 自调用– (function (){})()</p>
+
+<p>
+	<h3>arguments对象详解</h3>
+</p>
+<p>每创建一个函数，该函数就会隐式创建一个arguments对象,他包含有实际传入参数的信息。</p>
+<p><h6> arguments对象的属性</h6></p>
+<p>– length 获得实参的个数
+– callee 获得函数本身的引用
+– 访问传入参数的具体的值。arguments[下标]</p>
+
+
+
+<p><h3> 顶层 ,在页面当中的任何地方都可以调用。</h3></p>
+<p>JavaScript内置顶层函数</p>
+<p>1.escape() 将非字母、数字字符进行编码</p>
+<p>2.unescape() 对编码的字符串进行解码</p>
+<p>3.Number() 转换成数值类型</p>
+<p>4.String() 转换成字符串类型</p>
+<p>5.Boolean() 转换成布尔类型</p>
+<p>6.parseInt() 将字符串转换为整型</p>
+<p>7.parseFloat() 转换为小数</p>
+<p>8.isNaN() 判断一个数能否转换为数值类型</p>
+
+<p>
+	<h6>JavaScript数据强制转换</h6></p>
+	<p>1.Number() 转换成数值类型</p>
+<p>2.String() 转换成字符串类型</p>
+<p>3.Boolean() 转换成布尔类型</p>
+<p>4.parseInt() 将字符串转换为整型</p>
+<p>5.parseFloat() 转换为浮点型</p>
+<p>
+	<h6>数据类型隐式转换</h6>
+</p>
+<p><h2>对象</h2></p>
+<p>销毁对象: 对象=null;</p>
+<p>删除对象的属性: delete 对象.属性</p>
+<p>对象属性的遍历:for (var i in Objct){Object[i]}</p>
+<p> instanceof 用来检测某个对象是否是某个构造函数的实例。</p>
+<p>
+	<h2>JavaScrit数组对象</h2>
+</p>
+<p><h5>A.删除或添加类</h5> <br>
+1. myarr.push(数组元素......)<br>
+向数组的末尾添加新的元素，返回值是新数组的长度。可以一次添加多个元<br>
+素<br>
+2. myarr.unshift(数组元素.....)<br>
+向数组的开头加入新的元素，返回值是新数组的长度。可以一次添加多个元<br>
+素<br>
+3. myarr.pop()<br>
+删除数组的最后一个元素，返回删除的元素<br>
+4. myarr.shift()<br>
+删除数组的第一个元素，返回删除的元素<br>
+5.万能的添加删除函数(用于插入、删除或替换数组的元素。)<br>
+myarr.splice(index,数量,添加的元素.....)<br>
+(1)index 从何处开始添加或删除，必须是数值类型(数组的下标)<br>
+(2)数量 规定了删除的个数，如果是0，则不删除<br>
+(3)需要添加的元素，可以当作替换的元素<br>
+(4)如果从arrayObject中删除了元素，则返回的是含有被删除的元素的<br>
+数组。</p>
+
+
+<h5>B.数组的转换</h5><br>
+mystr.split() //字符串分割为数组<br>
+myarr.join([分隔符])<br>
+把数组元素按照指定分隔符组合成一个字符串，如果没有<br>
+指定分隔符，默认是用“,”<br>
+返回结果就是组合成的字符串<br>
+
+
+<h5>C.数组的分割</h5><br>
+myarr.slice()<br>
+ 从截取指定的开始位置，到结束位置(不包括)的元素。如果不指定结<br>
+束位置，则从 指定的开始位置，取到结尾(数组的下标)<br>
+ 支持负数(-1开头) 返回新数组。<br>
+
+
+<h5>D.数组的连接</h5><br>
+myarr.concat()<br>
+ 连接两个或更多的数组，并返回新数组，但是对原数组没<br>
+有任何影响。<br>
+
+<h5>E.数组排序</h5><br>
+myarr.sort(fun) 用于对数组的元素进行排序<br>
+1. 默认是按照字符编码的顺序进行排<br>
+2. 如果要实现其他排序则要传入一个参数，这个参数必<br>
+须要函数，并且这个函数要有两个参数<br>
+• 若 a 小于 b，在排序后的数组中 a 应该出现在 b 之<br>
+前，则返回一个小于 0 的值。<br>
+• 若 a 等于 b，则返回 0。<br>
+• 若 a 大于 b，则返回一个大于 0 的值。<br>
+<p>
+	<h3>JavaScript字符串对象</h3>
+</p>
+
+<p>查找：indexOf():lastIndexOf():match():search():search()</p>
+<p> 截取类型:slice(start,end);substring(start,end);substr(start,length)</p>
+<p>转换类型:.split("分割位置",[指定的长度]);toLowerCase();toUpperCase();</p>
+
+<p>
+	<h3>JavaScritpMath对象</h3>
+</p>
+
+<p>1.取绝对值
+Math.abs();</p>
+<p>2.取近似整数
+Math.round() 四舍五入
+Math.floor() 对数进行向下取整
+Math.ceil() 对数进行向上取整</p>
+<p>3.取最大值或最小值
+Math.max(参数....)
+Math.min(参数.....)</p>
+<p>4.取随机数
+Math.random();</p>
+<p>
+	<h6 style="color:red">Math.pow(x,y) 返回 x 的 y 次幂 平方
+Math.sqrt(x) 平方根
+numberObj.toFixed(2)
+指定小数四舍五入后保留的位数</h6>
+</p>
+<p>13.JavaScript-BOM.pdf</p>
+<p>match</p>
+</body>
+</html>
