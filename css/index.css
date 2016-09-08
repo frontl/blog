@@ -19,6 +19,7 @@ html {
 }
 
 .weibox {
+  min-width: 1000px;
   height: 100%;
   width: 41%;
   margin: 0 auto;
@@ -98,14 +99,14 @@ html {
 }
 
 .wht {
-  height: auto;
+  height: 766px;
   width: 80%;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .wht ul {
-  height: 20px;
   width: 100%;
+  height: auto;
 }
 
 .wht ul li {
@@ -115,4 +116,81 @@ html {
   text-align: center;
   float: left;
   display: inline-block;
+}
+
+.wht ul li a {
+  color: #333;
+}
+
+.wht ul li a:hover {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1680px) {
+  .weibox {
+    min-width: 800px;
+  }
+  .wht {
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .wht ul {
+    height: 20px;
+    width: 100%;
+  }
+  .wht ul li {
+    height: 100%;
+    width: 33%;
+    line-height: 20px;
+    text-align: center;
+    float: left;
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .weibox {
+    min-width: 700px;
+  }
+  .wht {
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .wht ul {
+    height: 20px;
+    width: 100%;
+  }
+  .wht ul li {
+    height: 100%;
+    width: 33%;
+    line-height: 20px;
+    text-align: center;
+    float: left;
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .weibox {
+    min-width: 600px;
+  }
+  .wht {
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .wht ul {
+    height: 20px;
+    width: 100%;
+  }
+  .wht ul li {
+    height: 100%;
+    width: 33%;
+    line-height: 20px;
+    text-align: center;
+    float: left;
+    display: inline-block;
+  }
 }
